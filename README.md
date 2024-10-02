@@ -9,6 +9,7 @@ This project is a web-based application for searching, previewing, and selecting
 - Preview website templates directly from GitHub
 - Bookmark favorite templates for easy access
 - Responsive design for different screen sizes
+- Download the repo as a zip file
 
 ## Installation
 
@@ -16,24 +17,10 @@ This project is a web-based application for searching, previewing, and selecting
    ```bash
    git clone <your-repo-url>
    ```
-   
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
 
-3. Create a `.env` file in the root directory with the following content:
-   ```bash
-   GITHUB_TOKEN=<your_github_token>
-   PORT=3000
-   ```
+2. Start the server.
 
-4. Start the server:
-   ```bash
-   npm start
-   ```
-
-5. Open the application by visiting `http://localhost:3000` in your browser.
+3. Open the application by visiting `http://localhost:3000` in your browser.
 
 ## File Structure
 
@@ -71,12 +58,7 @@ This project is a web-based application for searching, previewing, and selecting
 
 
 
-
-
-
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 ```
-
-Now you can copy and paste the entire file at once!
