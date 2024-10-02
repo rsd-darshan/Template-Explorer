@@ -63,7 +63,8 @@ This project is a web-based application for searching, previewing, and selecting
 
 ## Screenshots
 
-![Uploading webtemplate.png…]()<img width="1440" alt="webtemplate1" src="https://github.com/user-attachments/assets/1b5dc0fd-1814-45cd-9c57-ac312ce34268"><img width="1440" alt="webtemplate2" src="https://github.com/user-attachments/assets/ce9da121-8d9d-40e3-af1b-a815e3230fef"><img width="1440" alt="webtemplate3" src="https://github.com/user-attachments/assets/26944034-4f1a-462d-ae37-a754ec82b0c1"><img width="1440" alt="webtemplate4" src="https://github.com/user-attachments/assets/eef58c89-6f00-4745-b753-de749b40fb6a">
+<img width="1440" alt="webtemplate" src="https://github.com/user-attachments/assets/5f9c86f2-e7b9-4e95-8646-47d14e127226">
+<img width="1440" alt="webtemplate1" src="https://github.com/user-attachments/assets/1b5dc0fd-1814-45cd-9c57-ac312ce34268"><img width="1440" alt="webtemplate2" src="https://github.com/user-attachments/assets/ce9da121-8d9d-40e3-af1b-a815e3230fef"><img width="1440" alt="webtemplate3" src="https://github.com/user-attachments/assets/26944034-4f1a-462d-ae37-a754ec82b0c1"><img width="1440" alt="webtemplate4" src="https://github.com/user-attachments/assets/eef58c89-6f00-4745-b753-de749b40fb6a">
 <img width="1435" alt="webtemplate5" src="https://github.com/user-attachments/assets/545c7c0f-64a2-4257-ac36-611b02f788d0">
 
 
