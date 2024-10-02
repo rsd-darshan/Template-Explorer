@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Template Selector</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <a href="#" id="new-chat">
+                <h1>AI Agents - Here To Help!</h1>
+            </a>
+            <input type="text" placeholder="Explore" class="explore-input">
+            <ul class="menu">
+                <li>New Chat</li>
+                <li>Clone Other Projects</li>
+                <li>Agents</li>
+                <li>ChatBot</li>
+                <li>Official Website</li>
+                <li>PC Software</li>
+                <li>About Us</li>
+                <li>Team</li>
+                <li>Buy Premium</li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="content">
+                <button id="leftArrow" class="arrow" onclick="navigateTemplates('prev')">&larr;</button>
+                <div id="templates" class="template-grid"></div>
+                <button id="rightArrow" class="arrow" onclick="navigateTemplates('next')">&rarr;</button>
+            </div>
+            <div class="user-prompt">
+                <div class="search-container">
+                    <input type="text" id="searchKeyword" placeholder="Search Template">
+                    <button onclick="fetchTemplates()">Search</button>
+                </div>
+            </div>
+        </div>
+        <div class="right-sidebar">
+            <h3>Choose the Website Template</h3>
+            <div class="filter-container">
+                <select id="templateType">
+                    <option value="ecommerce">Ecommerce website</option>
+                    <option value="business">Business website</option>
+                    <option value="blog">Blog website</option>
+                    <option value="portfolio">Portfolio website</option>
+                    <option value="event">Event website</option>
+                    <option value="personal">Personal website</option>
+                    <option value="membership">Membership website</option>
+                    <option value="nonprofit">Nonprofit website</option>
+                    <option value="informational">Informational website</option>
+                    <option value="forum">Online forum</option>
+                    <option value="community">Community website</option>
+                    <option value="startup">Startup website</option>
+                    <option value="consulting">Consulting website</option>
+                    <option value="booking">Booking website</option>
+                    <option value="petition">Petition website</option>
+                    <option value="school">School website</option>
+                    <option value="hobby">Hobby website</option>
+                    <option value="interactive">Interactive website</option>
+                    <option value="entertainment">Entertainment website</option>
+                    <option value="wedding">Wedding website</option>
+                    <option value="travel">Travel website</option>
+                    <option value="directory">Directory website</option>
+                    <option value="landing">Landing page website</option>
+                    <option value="news">News and magazine website</option>
+                    <option value="memorial">Memorial website</option>
+                    <option value="subscription">Subscription website</option>
+                    <option value="kid-friendly">Kid-friendly website</option>
+                </select>
+                <select id="sortOrder">
+                    <option value="stars">Stars</option>
+                    <option value="forks">Forks</option>
+                    <option value="updated">Recently Updated</option>
+                </select>
+                <button onclick="fetchTemplates()">Show Templates</button>
+                <button onclick="clearFilters()">Clear Filters</button>
+            </div>
+            <h3>Bookmarks</h3>
+            <div id="bookmarkedTemplates" class="bookmarks-container"></div>
+        </div>
+    </div>
+    <div id="loadingSpinner" class="spinner"></div>
+    <div id="error" class="error"></div>
+    <script src="script.js"></script>
+</body>
+</html>

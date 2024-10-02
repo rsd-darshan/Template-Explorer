@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+body {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    display: flex;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+
+.sidebar {
+    width: 473px;
+    background-color: #1a1a1a;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+#new-chat {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    color: inherit;
+    font-weight: 700;
+}
+
+#new-chat h1 {
+    font-size: 24px;
+    margin: 0;
+    transition: color 0.3s;
+}
+
+#new-chat h1:hover {
+    color: #f0db4f;
+}
+
+.explore-input {
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background-color: #333;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+}
+
+.menu li {
+    padding: 10px;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    font-weight: 400;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.menu li:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+    border-radius: 5px;
+}
+
+.main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.content {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    position: relative;
+    overflow: hidden;
+}
+
+.template-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    width: 100%;
+    padding: 20px 0;
+    max-width: 1200px;
+    overflow: hidden;
+}
+
+.template, .bookmarked-template {
+    border: 1px solid #ddd;
+    padding: 15px;
+    width: 220px;
+    height: 180px; /* Adjusted height */
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+}
+
+.template h3, .bookmarked-template h3 {
+    font-size: 14px;
+    color: #333;
+    margin: 5px 0;
+    height: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.template p, .bookmarked-template p {
+    font-size: 12px;
+    color: #666;
+    margin: 5px 0;
+    line-height: 1.2em;
+    height: 60px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.template .actions, .bookmarked-template .actions {
+    display: flex;
+    justify-content: space-around;
+    margin-top: auto;
+}
+
+.template .actions button, .bookmarked-template .actions button {
+    padding: 5px;
+    border: none;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 12px;
+}
+
+.template .actions button:hover, .bookmarked-template .actions button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+.template:hover, .bookmarked-template:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Additional styles for arrows */
+.arrow {
+    background-color: transparent;
+    border: none;
+    color: #3498db;
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.3s;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+#leftArrow {
+    left: 10px;
+}
+
+#rightArrow {
+    right: 10px;
+}
+
+.arrow:hover {
+    color: #2980b9;
+}
+
+.arrow:disabled {
+    color: #bbb;
+    cursor: not-allowed;
+}
+
+.user-prompt {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-container input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 300px;
+    font-size: 16px;
+}
+
+.search-container button {
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 16px;
+}
+
+.search-container button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+.right-sidebar {
+    width: 480px;
+    background-color: #1a1a1a;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+.filter-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.filter-container select, .filter-container button {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 16px;
+}
+
+.filter-container button:hover {
+    background-color: #444;
+    transform: scale(1.05);
+}
+
+.bookmarks-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.spinner {
+    display: none;
+    width: 50px;
+    height: 50px;
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+    margin: 20px auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.skeleton-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    width: 220px;
+    height: 180px; /* Adjusted height */
+    background-color: #eee;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    animation: pulse 1.5s infinite;
+}
+
+.skeleton-card .skeleton-text {
+    width: 100%;
+    height: 10px;
+    background-color: #ddd;
+    margin: 5px 0;
+}
+
+@keyframes pulse {
+    0% {
+        background-color: #eee;
+    }
+    50% {
+        background-color: #ddd;
+    }
+    100% {
+        background-color: #eee;
+    }
+}
