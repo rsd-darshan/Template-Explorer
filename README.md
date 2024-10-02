@@ -63,9 +63,9 @@ This project is a web-based application for searching, previewing, and selecting
 
 ## Screenshots
 
-<img width="1440" alt="webtemplate" src="https://github.com/user-attachments/assets/3ce77c7e-e073-496d-95b5-6094a2026de3"> <img width="1440" alt="webtemplate3" src="https://github.com/user-attachments/assets/6ec723e2-e7b0-42ec-aed1-cef9544e16f2">
-<img width="1440" alt="webtemplate2" src="https://github.com/user-attachments/assets/22d24904-1afe-4612-95c3-0b81f9ed5280">
-<img width="1440" alt="webtemplate1" src="https://github.com/user-attachments/assets/d39d7e89-25a5-4cd4-bd87-8168ee1879e6">
+<img width="1440" alt="webtemplate1" src="https://github.com/user-attachments/assets/b8ebdf79-46bb-406e-a923-c2f28f324580"><img width="1440" alt="webtemplate2" src="https://github.com/user-attachments/assets/142233ea-b02a-4613-8663-435e7eac884c">
+
+
 
 
 ## License
